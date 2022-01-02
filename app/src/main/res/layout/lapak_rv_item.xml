@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvLapak"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="5dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="12dp"
+    app:contentPadding="11dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <ImageView
+            android:id="@+id/ivLapak"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_troli" />
+
+        <TextView
+            android:id="@+id/tvNamaLapak"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivLapak"
+            android:text="Dagang Bayam"
+            android:textColor="@color/darker_blue"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvKategori"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvNamaLapak"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/ivLapak"
+            android:text="Sayur Mayur"
+            android:textColor="@color/dark_blue"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvLokasiLapak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="A1"
+            android:textColor="@color/darker_blue"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lblPemilik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivLapak"
+            android:layout_marginTop="5dp"
+            android:text="Pemilik :"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPemilik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivLapak"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/lblPemilik"
+            android:text="Saya Sendiri"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
